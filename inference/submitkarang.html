@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Prediksi Spesies Ikan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo putihh.png" rel="icon">
+  <link href="assets/img/logo putihh.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+  <script src="app.js"></script>
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <div class="logo" style="width: 200px; height: auto;" rows="1">
+          <img src="assets/img/mata karang.jpeg" alt="logo" style="max-width: 500px; height: auto;" rows="3">
+      </div>
+      </a>
+
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Beranda</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+    
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            
+            <h2 data-aos="fade-down">Input Data <span>Spesies Ikan Air Laut</span></h2>
+            <p data-aos="fade-up">Dalam aplikasi sederhana dibawah ini kamu bisa melakukan prediksi gambar suatu spesies ikan, saat ini kami menyediakan 3 spesies ikan yaitu:</p>
+            <ul data-aos="fade-up" style="color: white; text-align: center; list-style-position: inside;">
+              <li>Polyprion americanus</li>
+              <li>Trigloporus lastoviza</li>
+              <li>Anthias anthias</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url(assets/img/pexels-francesco-ungaro-3154149.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/pexels-francesco-ungaro-3157890.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/pexels-francesco-ungaro-3487160.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/pexels-francesco-ungaro-3695175.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/pexels-john-cahil-rom-3041870.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/pexels-tom-fisk-1935360.jpg)"></div>
+      
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="get-started section-bg">
+      <div class="container">
+        <div class="row justify-content-center gy-4">
+          <div class="col-lg-5" data-aos="fade">
+            <form action="" method="post" class="php-email-form">
+              <h3>Klasifikasi Spesies Ikan Air Laut</h3>
+              <p>Berikut contoh beberapa gambar yang memperlihatkan spesies ikan air laut</p>
+              <div class="row gy-3">
+                <div class="container">
+                  <div class="gambar-garis">
+                    <img src="assets/img/anthias1.jpg" alt="Gambar 1">
+                    <img src="assets/img/trigloporus1.jpg" alt="Gambar 2">
+                    <img src="assets/img/polyprion1.jpg" alt="Gambar 3">
+                  </div>
+                  <div class="gambar-garis">
+                    <img src="assets/img/trigloporus2.jpg" alt="Gambar 4">
+                    <img src="assets/img/anthias2.jpg" alt="Gambar 5">
+                    <img src="assets/img/polyprion2.jpg" alt="Gambar 6">
+                  </div>
+                  <input type="file" id="imageInput" accept="image/*">
+                  <button type="button" id="classifyButton">Klasifikasi Gambar</button>
+                  <div id="result"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
