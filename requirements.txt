@@ -1,0 +1,6 @@
+tensorflowjs
+pyforest
+tensorflow
+opencv-python
+scikit-learn
+keras
